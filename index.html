@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arindam | Full-Stack Developer</title>
+  
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for standard icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-mid-right"></div>
+  <div class="ambient-glow glow-bottom-right"></div>
+
+  <!-- Custom Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#home" class="logo" aria-label="Arindam Rui Das Logo">
+        <span>ARD</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About me</a>
+        <a href="#projects" class="nav-link">Project</a>
+        <a href="#skills" class="nav-link">Skill's</a>
+        <a href="#certifications" class="nav-link">Certification</a>
+        <a href="#experience" class="nav-link">Experience</a>
+      </nav>
+
+      <!-- Contact Action -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn-contact">Contact</a>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+    <nav class="mobile-nav-links">
+      <a href="#home" class="mobile-link active">Home</a>
+      <a href="#about" class="mobile-link">About me</a>
+      <a href="#projects" class="mobile-link">Project</a>
+      <a href="#skills" class="mobile-link">Skill's</a>
+      <a href="#certifications" class="mobile-link">Certification</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#contact" class="mobile-link mobile-btn-contact">Contact</a>
+    </nav>
+  </div>
+
+  <main id="app">
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <!-- Hero Centered Header -->
+        <div class="hero-top">
+          <div class="hello-pill">Hello</div>
+          <h1 class="hero-title">I'm Arindam,<br>Full-stack Developer</h1>
+        </div>
+
+        <!-- Hero Centered Graphic & Side Content -->
+        <div class="hero-body">
+          <!-- Left side description -->
+          <div class="hero-left-desc">
+            <p class="hero-description">
+              I build responsive full-stack web applications focused on performance, clean UI, and real-world problem solving.
+            </p>
+          </div>
+
+          <!-- Central profile image frame -->
+          <div class="hero-center-profile">
+            <div class="profile-glow"></div>
+            <img src="/src/assets/persone.png" alt="Arindam - Full-stack Developer" class="profile-img">
+            <a href="#contact" class="btn-hire">Hire Me</a>
+          </div>
+
+          <!-- Right side social icons -->
+          <div class="hero-right-socials">
+            <div class="social-links-vertical">
+              <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://dribbble.com" target="_blank" rel="noopener" class="social-icon" aria-label="Dribbble">
+                <i class="fa-brands fa-dribbble"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="about-card">
+          <h2 class="section-title text-center">About Me</h2>
+          
+          <div class="about-content">
+            <!-- Left Info Panel -->
+            <div class="about-text-panel">
+              <p>
+                I'm a passionate Full Stack Web Developer from Kolkata, India, specializing in building modern web applications. With a strong foundation in both frontend and backend technologies, I create seamless digital experiences that combine functionality with beautiful design.
+              </p>
+              <p>
+                My journey in web development has been fueled by curiosity and a drive to continuously learn. I've worked on various projects ranging from responsive websites to full-stack applications, always focusing on writing clean, efficient code.
+              </p>
+              <p>
+                Currently, I'm expanding my skills in Python and Java while exploring the latest trends in web development. I'm eager to contribute to innovative projects and collaborate with talented teams to create impactful solutions.
+              </p>
+            </div>
+
+            <!-- Right Specialties Grid -->
+            <div class="specialties-grid">
+              <!-- Frontend -->
+              <div class="specialty-card">
+                <div class="specialty-icon-wrapper">
+                  <div class="code-bracket">&lt; &gt;</div>
+                </div>
+                <h3 class="specialty-title">Frontend Development</h3>
+                <p class="specialty-desc">Building responsive and interactive UIs with modern frameworks.</p>
+              </div>
+
+              <!-- Backend -->
+              <div class="specialty-card">
+                <div class="specialty-icon-wrapper">
+                  <div class="code-bracket">&lt; &gt;</div>
+                </div>
+                <h3 class="specialty-title">Backend Development</h3>
+                <p class="specialty-desc">Creating scalable Server APIs, microservices, and database systems.</p>
+              </div>
+
+              <!-- Database -->
+              <div class="specialty-card">
+                <div class="specialty-icon-wrapper">
+                  <div class="code-bracket">&lt; &gt;</div>
+                </div>
+                <h3 class="specialty-title">Database Management</h3>
+                <p class="specialty-desc">Designing optimized schemas and query structures for SQL/NoSQL.</p>
+              </div>
+
+              <!-- UI/UX -->
+              <div class="specialty-card">
+                <div class="specialty-icon-wrapper">
+                  <div class="code-bracket">&lt; &gt;</div>
+                </div>
+                <h3 class="specialty-title">UI/UX & Creative</h3>
+                <p class="specialty-desc">Designing visual mockups, components, and premium styling systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+      <div class="section-container">
+        <h2 class="section-title text-center">My Projects</h2>
+        <p class="section-subtitle text-center">A curated selection of recent full-stack and frontend applications.</p>
+
+        <!-- Project Tabs -->
+        <div class="project-tabs">
+          <button class="tab-btn active" data-filter="all">All Projects</button>
+          <button class="tab-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="tab-btn" data-filter="frontend">Frontend</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1 (Fullstack) -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-image-wrapper">
+              <img src="/project-ecommerce.png" alt="E-Commerce Platform">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link-icon" aria-label="View Code"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="project-link-icon" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Full-Stack</span>
+              <h3 class="project-card-title">Quantum E-Commerce</h3>
+              <p class="project-card-desc">
+                A premium, modern online store with real-time stock sync, advanced search, secure Stripe integration, and user profile management.
+              </p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>Tailwind</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 (Frontend/UI) -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-image-wrapper">
+              <img src="/project-dashboard.png" alt="Analytics Dashboard">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link-icon" aria-label="View Code"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="project-link-icon" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Frontend</span>
+              <h3 class="project-card-title">Apex Financial Dashboard</h3>
+              <p class="project-card-desc">
+                An interactive financial analytics dashboard displaying complex data streams, live transaction logs, and interactive Chart.js widgets.
+              </p>
+              <div class="project-tech">
+                <span>TypeScript</span>
+                <span>Vite</span>
+                <span>Chart.js</span>
+                <span>CSS Variables</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 (Fullstack) -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-image-wrapper">
+              <img src="/project-social.png" alt="Social Media Web Application">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link-icon" aria-label="View Code"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="project-link-icon" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Full-Stack</span>
+              <h3 class="project-card-title">SyncSphere Social Network</h3>
+              <p class="project-card-desc">
+                A real-time messaging and content sharing space featuring instant notifications, high-fidelity media feeds, and active user chatrooms.
+              </p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Socket.io</span>
+                <span>MongoDB</span>
+                <span>Express</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+      <div class="section-container">
+        <h2 class="section-title text-center">Technical Skills</h2>
+        <p class="section-subtitle text-center">My tech stack, utilities, and workflows for crafting robust applications.</p>
+
+        <div class="skills-grid">
+          <!-- Skill Category: Languages -->
+          <div class="skills-category-card">
+            <h3 class="category-title"><i class="fa-solid fa-code"></i> Languages</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">TypeScript / JavaScript</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 / CSS3</span>
+                  <span class="skill-percentage">98%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="98%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="75%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category: Frameworks & Libraries -->
+          <div class="skills-category-card">
+            <h3 class="category-title"><i class="fa-solid fa-layer-group"></i> Frameworks & Libs</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">React / Next.js</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Node.js / Express</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Vite</span>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">TailwindCSS</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="95%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category: Databases & Infrastructure -->
+          <div class="skills-category-card">
+            <h3 class="category-title"><i class="fa-solid fa-database"></i> Cloud & Databases</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">PostgreSQL / MySQL</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MongoDB</span>
+                  <span class="skill-percentage">82%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="82%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Docker & AWS</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress-bar" style="width: 0%" data-progress="70%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="certifications-section">
+      <div class="section-container">
+        <h2 class="section-title text-center">My Certifications</h2>
+        <p class="section-subtitle text-center">Credentials that validate my technical proficiency and growth.</p>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-badge">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="cert-title">Meta Full-Stack Developer Certificate</h3>
+            <p class="cert-issuer">Issued by Meta / Coursera</p>
+            <p class="cert-date">Issued Jan 2026</p>
+            <span class="cert-tag">Credentials Verified</span>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-badge">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="cert-title">AWS Certified Developer - Associate</h3>
+            <p class="cert-issuer">Issued by Amazon Web Services</p>
+            <p class="cert-date">Issued Oct 2025</p>
+            <span class="cert-tag">Credentials Verified</span>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-badge">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="cert-title">React Native & Frontend Advanced</h3>
+            <p class="cert-issuer">Issued by Google / Udacity</p>
+            <p class="cert-date">Issued Jun 2025</p>
+            <span class="cert-tag">Credentials Verified</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience-section">
+      <div class="section-container">
+        <h2 class="section-title text-center">Professional Experience</h2>
+        <p class="section-subtitle text-center">A trace of my contributions and learning in the tech industry.</p>
+
+        <!-- Vertical Timeline -->
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">July 2025 - Present</span>
+              <h3 class="timeline-role">Junior Full-Stack Developer</h3>
+              <h4 class="timeline-company">InnoTech Solutions, Kolkata</h4>
+              <p class="timeline-desc">
+                Leading development on core SaaS dashboard services using Next.js, Node.js, and Prisma. Optimized SQL query performance by 40% and designed highly-interactive, real-time visual analytical graphs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2024 - May 2025</span>
+              <h3 class="timeline-role">Full-Stack Web Dev Intern</h3>
+              <h4 class="timeline-company">PixelCraft Digital Agency</h4>
+              <p class="timeline-desc">
+                Assisted in architecting custom E-commerce applications and agency landing sites. Implemented responsive layouts with Tailwind CSS, pixel-perfect Figma designs, and integrated REST APIs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Feb 2024 - Oct 2024</span>
+              <h3 class="timeline-role">Freelance Web Developer</h3>
+              <h4 class="timeline-company">Self-employed</h4>
+              <p class="timeline-desc">
+                Designed and deployed custom portfolios, CMS websites, and landing pages for micro-businesses and individual clients globally. Handled client discovery, wireframing, development, and server hosting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="contact-card">
+          <div class="contact-grid">
+            <!-- Left Info Panel -->
+            <div class="contact-info-panel">
+              <h2 class="section-title">Let's Connect</h2>
+              <p class="contact-subtitle">
+                Have an idea, project, or opportunity you'd like to discuss? I'd love to hear from you! Send a message or reach out via direct channels.
+              </p>
+
+              <div class="contact-details-list">
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-regular fa-envelope"></i></div>
+                  <div class="detail-text">
+                    <span>Email me</span>
+                    <a href="mailto:arindam.developer@gmail.com">arindam.developer@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-map-pin"></i></div>
+                  <div class="detail-text">
+                    <span>Based in</span>
+                    <strong>Kolkata, West Bengal, India</strong>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-briefcase"></i></div>
+                  <div class="detail-text">
+                    <span>Freelance & Contracts</span>
+                    <strong>Available for Remote Work</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="contact-social-row">
+                <a href="#" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-dribbble"></i></a>
+              </div>
+            </div>
+
+            <!-- Right Form Panel -->
+            <div class="contact-form-panel">
+              <form id="contactForm" class="contact-form">
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="userName">Name</label>
+                    <input type="text" id="userName" name="name" required placeholder="John Doe">
+                  </div>
+                  <div class="form-group">
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" name="email" required placeholder="john@example.com">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="msgSubject">Subject</label>
+                  <input type="text" id="msgSubject" name="subject" required placeholder="Project Collaboration">
+                </div>
+
+                <div class="form-group">
+                  <label for="msgContent">Message</label>
+                  <textarea id="msgContent" name="message" rows="5" required placeholder="Tell me about your project or opportunity..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit" id="btnSubmit">
+                  <span>Send Message</span>
+                  <i class="fa-regular fa-paper-plane"></i>
+                </button>
+              </form>
+
+              <!-- Feedback Messages -->
+              <div class="form-feedback feedback-success" id="formSuccess">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Message Sent Successfully!</h4>
+                  <p>Thank you for reaching out, Arindam will get back to you shortly.</p>
+                </div>
+              </div>
+
+              <div class="form-feedback feedback-error" id="formError">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div>
+                  <h4>Something Went Wrong</h4>
+                  <p>Please double check your parameters and try again.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-logo">ARD</span>
+        <p>&copy; 2026 Arindam Rui Das. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="footer-contact-link">Get in touch</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script entry point -->
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
